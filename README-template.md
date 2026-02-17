@@ -41,7 +41,7 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 
 ### Links
 
-- Solution URL: [Add solution URL here]((http://127.0.0.1:5501/index.html)m)
+- Solution URL: [Add solution URL here](http://127.0.0.1:5501/index.html
 - Live Site URL: [Add live site URL here](https://your-live-site-url.com)
 
 ## My process
