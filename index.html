@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | Testimonials Grid</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap" rel="stylesheet">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+  <style>
+    :root {
+      --purple-500: hsl(263, 55%, 52%);
+      --grey-100: hsl(214, 17%, 92%);
+      --grey-200: hsl(0, 0%, 81%);
+      --grey-400: hsl(224, 10%, 45%);
+      --grey-500: hsl(217, 19%, 35%);
+      --dark-blue: hsl(219, 29%, 14%);
+      --white: hsl(0, 0%, 100%);
+    }
+
+    body {
+      background-color: var(--grey-100);
+      font-family: 'Barlow Semi Condensed', sans-serif;
+      font-size: 13px; /* As per Style Guide */
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      padding: 50px 0;
+    }
+
+    /* Card Styling */
+    .card {
+      border: none;
+      border-radius: 0.6rem;
+      padding: 1.8rem 2rem;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .bg-purple { background-color: var(--purple-500); color: var(--white); }
+    .bg-gray { background-color: var(--grey-500); color: var(--white); }
+    .bg-dark { background-color: var(--dark-blue); color: var(--white); }
+    .bg-white-custom { background-color: var(--white); color: var(--grey-500); }
+
+    /* Daniel's specific quote pattern */
+    .card-daniel {
+      background-image: url('./images/bg-pattern-quotation.svg');
+      background-repeat: no-repeat;
+      background-position: top 0 right 15%;
+    }
+
+    .profile-img {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      margin-right: 15px;
+    }
+
+    .border-purple { border: 2px solid hsl(264, 82%, 70%); }
+
+    .card-title {
+      font-size: 1.25rem;
+      font-weight: 600;
+      line-height: 1.2;
+      margin-bottom: 1rem;
+      position: relative;
+      z-index: 2;
+    }
+
+    .card-text {
+      font-weight: 500;
+      opacity: 0.7;
+      line-height: 1.4;
+    }
+
+    .name { font-weight: 600; margin: 0; line-height: 1; }
+    .status { font-weight: 500; opacity: 0.5; margin: 0; font-size: 11px; }
+
+    .attribution { font-size: 11px; text-align: center; margin-top: 30px; }
+  </style>
+</head>
+<body>
+
+<main class="container">
+  <div class="row g-4">
+    
+    <div class="col-lg-9">
+      <div class="row g-4">
+        
+        <div class="col-md-8">
+          <div class="card bg-purple shadow-sm card-daniel">
+            <div class="d-flex align-items-center mb-3">
+              <img src="./images/image-daniel.jpg" alt="Daniel" class="profile-img border-purple">
+              <div><p class="name">Daniel Clifford</p><p class="status">Verified Graduate</p></div>
+            </div>
+            <h2 class="card-title">I received a job offer mid-course, and the subjects I learned were current, if not more so, in the company I joined. I honestly feel I got every penny’s worth.</h2>
+            <p class="card-text">“ I was an EMT for many years before I joined the bootcamp. I’ve been looking to make a transition and have heard some people who had an amazing experience here. I signed up for the free intro course and found it incredibly fun! I enrolled shortly thereafter. The next 12 weeks was the best - and most grueling - time of my life. Since completing the course, I’ve successfully switched careers, working as a Software Engineer at a VR startup. ”</p>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card bg-gray shadow-sm">
+            <div class="d-flex align-items-center mb-3">
+              <img src="./images/image-jonathan.jpg" alt="Jonathan" class="profile-img">
+              <div><p class="name">Jonathan Walters</p><p class="status">Verified Graduate</p></div>
+            </div>
+            <h2 class="card-title">The team was very supportive and kept me motivated</h2>
+            <p class="card-text">“ I started as a total newbie with virtually no coding skills. I now work as a mobile engineer for a big company. This was one of the best investments I’ve made in myself. ”</p>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card bg-white-custom shadow-sm">
+            <div class="d-flex align-items-center mb-3">
+              <img src="./images/image-jeanette.jpg" alt="Jeanette" class="profile-img">
+              <div><p class="name">Jeanette Harmon</p><p class="status">Verified Graduate</p></div>
+            </div>
+            <h2 class="card-title">An overall wonderful and rewarding experience</h2>
+            <p class="card-text">“ Thank you for the wonderful experience! I now have a job I really enjoy, and make a good living while doing something I love. ”</p>
+          </div>
+        </div>
+
+        <div class="col-md-8">
+          <div class="card bg-dark shadow-sm">
+            <div class="d-flex align-items-center mb-3">
+              <img src="./images/image-patrick.jpg" alt="Patrick" class="profile-img border-purple">
+              <div><p class="name">Patrick Abrams</p><p class="status">Verified Graduate</p></div>
+            </div>
+            <h2 class="card-title">Awesome teaching support from TAs who did the bootcamp themselves. Getting guidance from them and learning from their experiences was easy.</h2>
+            <p class="card-text">“ The staff seem genuinely concerned about my progress which I find really refreshing. The program gave me the confidence necessary to be able to go out in the world and present myself as a capable junior developer. The standard is above the rest. You will get the personal attention you need from an incredible community of smart and amazing people. ”</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="col-lg-3">
+      <div class="card bg-white-custom shadow-sm h-100">
+        <div class="d-flex align-items-center mb-3">
+          <img src="./images/image-kira.jpg" alt="Kira" class="profile-img">
+          <div><p class="name">Kira Whittle</p><p class="status">Verified Graduate</p></div>
+        </div>
+        <h2 class="card-title">Such a life-changing experience. Highly recommended!</h2>
+        <p class="card-text">“ Before joining the bootcamp, I’ve never written a line of code. I needed some structure from professionals who can help me learn programming step by step. I was encouraged to enroll by a former student of theirs who can only say wonderful things about the program. The entire curriculum and staff did not disappoint. They were very hands-on and I never had to wait long for assistance. The agile team project, in particular, was outstanding. It took my learning to the next level in a way that no tutorial could ever have. In fact, I’ve often referred to it during interviews as an example of my developent experience. It certainly helped me land a job as a full-stack developer after receiving multiple offers. 100% recommend! ”</p>
+      </div>
+    </div>
+
+  </div>
+
+  <footer class="attribution"> <a href="/index.html" target="_blank">Bank to home page</a>. 
+    Coded by <a href="#">Yashaswini Mudragadda</a>.
+  </footer>
+</main>
+</body>
+</html>
